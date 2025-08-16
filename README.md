@@ -109,7 +109,7 @@ You can customize the blog by:
 
 ### Home Page
 ![BlogSpace Screenshot](output/dashboard.png)
-Feature Articles
+
 ### Featured Articles
 ![Featured Articles](output/featured.png)
 
