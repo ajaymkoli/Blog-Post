@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogSpace | Modern Bootstrap Blog</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home" data-page="home">
+                <i class="bi bi-pencil-square me-2"></i>BlogSpace
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home" data-page="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#technology" data-page="category">Technology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#design" data-page="category">Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#business" data-page="category">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lifestyle" data-page="category">Lifestyle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" data-page="about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" data-page="contact">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <div class="input-group">
+                        <input class="form-control border-end-0" type="search" placeholder="Search articles...">
+                        <button class="btn btn-outline-primary border-start-0" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page-content active">
+        <!-- Hero Section -->
+        <section class="hero-section d-flex align-items-center text-white">
+            <div class="container text-center">
+                <h1 class="display-4 fw-bold mb-3">Discover the World Through Words</h1>
+                <p class="lead mb-4">Insights, stories, and ideas from our global community of writers</p>
+                <a href="#technology" class="btn btn-light btn-lg px-4 py-2 fw-bold" data-page="category">Explore Articles</a>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="container my-5">
+            <!-- Featured Posts -->
+            <div class="row mb-5">
+                <div class="col">
+                    <h2 class="section-title">Featured Articles</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Featured Post 1 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="position-relative">
+                            <div class="card-img-container">
+                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                                     class="card-img-top" alt="Web Development">
+                            </div>
+                            <span class="badge bg-danger category-badge">Technology</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">The Future of Web Development in 2023</h3>
+                            <p class="card-text">Exploring the latest trends and technologies that are shaping the future of web development and how developers can stay ahead in this rapidly evolving landscape.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                                         class="author-img me-2">
+                                    <div>
+                                        <small class="d-block">Alex Johnson</small>
+                                        <small class="text-muted">May 15, 2023 · 8 min read</small>
+                                    </div>
+                                </div>
+                                <a href="#article1" class="btn btn-outline-primary" data-page="article">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Featured Post 2 -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="position-relative">
+                            <div class="card-img-container">
+                                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                                     class="card-img-top" alt="UI Design">
+                            </div>
+                            <span class="badge bg-info category-badge">Design</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Minimalism in Modern UI Design</h3>
+                            <p class="card-text">How minimalism principles are transforming user interfaces and creating more intuitive digital experiences for users across platforms and devices.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                                         class="author-img me-2">
+                                    <div>
+                                        <small class="d-block">Sarah Miller</small>
+                                        <small class="text-muted">May 12, 2023 · 6 min read</small>
+                                    </div>
+                                </div>
+                                <a href="#article2" class="btn btn-outline-primary" data-page="article">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Latest Articles -->
+            <div class="row mt-5">
+                <div class="col">
+                    <h2 class="section-title">Latest Articles</h2>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm">
+                        <div class="position-relative">
+                            <div class="card-img-container">
+                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                                     class="card-img-top" alt="Startup">
+                            </div>
+                            <span class="badge bg-success category-badge">Business</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Building a Successful Startup in 2023</h5>
+                            <p class="card-text">Key strategies and lessons learned from entrepreneurs who have successfully navigated the challenging startup landscape.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                                         class="author-img me-2">
+                                    <div>
+                                        <small class="text-muted">Michael Chen</small>
+                                    </div>
+                                </div>
+                                <a href="#article3" class="btn btn-sm btn-outline-primary" data-page="article">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm">
+                        <div class="position-relative">
+                            <div class="card-img-container">
+                                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                                     class="card-img-top" alt="Remote Work">
+                            </div>
+                            <span class="badge bg-warning text-dark category-badge">Lifestyle</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Mastering Remote Work Productivity</h5>
+                            <p class="card-text">Effective techniques and tools to maintain focus and productivity while working from home or any remote location.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0e160de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                                         class="author-img me-2">
+                                    <div>
+                                        <small class="text-muted">Emma Wilson</small>
+                                    </div>
+                                </div>
+                                <a href="#article4" class="btn btn-sm btn-outline-primary" data-page="article">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm">
+                        <div class="position-relative">
+                            <div class="card-img-container">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                                     class="card-img-top" alt="AI">
+                            </div>
+                            <span class="badge bg-danger category-badge">Technology</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">AI in Everyday Applications</h5>
+                            <p class="card-text">How artificial intelligence is becoming an integral part of our daily lives through innovative applications and services.</p>
+                          <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                                         class="author-img me-2">
+                                    <div>
+                                        <small class="text-muted">David Kim</small>
+                                    </div>
+                                </div>
+                                <a href="#article5" class="btn btn-sm btn-outline-primary" data-page="article">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm">
+                        <div class="position-relative">
+                            <div class="card-img-container">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                                     class="card-img-top" alt="Marketing">
+                            </div>
+                            <span class="badge bg-success category-badge">Business</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Digital Marketing Trends 2023</h5>
+                            <p class="card-text">The most impactful digital marketing trends that businesses should leverage this year for maximum growth and engagement.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                                         class="author-img me-2">
+                                    <div>
+                                        <small class="text-muted">Olivia Davis</small>
+                                    </div>
+                                </div>
+                                <a href="#article6" class="btn btn-sm btn-outline-primary" data-page="article">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm">
+                        <div class="position-relative">
+                            <div class="card-img-container">
+                                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                                     class="card-img-top" alt="Food">
+                            </div>
+                            <span class="badge bg-warning text-dark category-badge">Lifestyle</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">The Art of Healthy Cooking</h5>
+                            <p class="card-text">Transform your meals with simple techniques that enhance flavor while boosting nutritional value for everyday health.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                                         class="author-img me-2">
+                                    <div>
+                                        <small class="text-muted">Sophia Garcia</small>
+                                    </div>
+                                </div>
+                                <a href="#article7" class="btn btn-sm btn-outline-primary" data-page="article">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card shadow-sm">
+                        <div class="position-relative">
+                            <div class="card-img-container">
+                                <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                                     class="card-img-top" alt="Travel">
+                            </div>
+                            <span class="badge bg-info category-badge">Travel</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Hidden Gems of Southeast Asia</h5>
+                            <p class="card-text">Discover off-the-beaten-path destinations that offer authentic cultural experiences without the crowds.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1504593811423-6dd665756598?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                                         class="author-img me-2">
+                                    <div>
+                                        <small class="text-muted">James Wilson</small>
+                                    </div>
+                                </div>
+                                <a href="#article8" class="btn btn-sm btn-outline-primary" data-page="article">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- Pagination -->
+            <nav class="d-flex justify-content-center mt-5">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a></li>
+                </ul>
+            </nav>
+        </main>
+    </div>
+
+    <!-- Article Page -->
+    <div id="article" class="page-content">
+        <div class="article-header">
+            <div class="container">
+                <span class="badge bg-danger mb-3">Technology</span>
+                <h1 class="display-4 fw-bold">The Future of Web Development in 2023</h1>
+                <div class="d-flex justify-content-center align-items-center mt-4">
+                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                         class="author-img me-3">
+                    <div class="text-start">
+                        <p class="mb-0 fw-bold">Alex Johnson</p>
+                        <p class="mb-0">May 15, 2023 · 8 min read</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="article-content">
+                        <p class="lead">The landscape of web development is evolving at an unprecedented pace, with new technologies and methodologies emerging every year. As we move through 2023, several key trends are shaping the future of how we build and interact with the web.</p>
+                        
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Web Development" class="img-fluid">
+                        
+                        <h3>The Rise of Progressive Web Apps (PWAs)</h3>
+                        <p>Progressive Web Apps continue to gain traction as they bridge the gap between web and mobile applications. PWAs offer the best of both worlds: the reach of the web combined with the capabilities of native apps. With features like offline functionality, push notifications, and device hardware access, PWAs provide an app-like experience without the need for installation from an app store.</p>
+                        
+                        <p>Major companies like Twitter, Pinterest, and Starbucks have already adopted PWAs, reporting significant improvements in user engagement and conversion rates. As browser support continues to improve and more frameworks add PWA capabilities by default, we can expect to see even wider adoption in 2023.</p>
+                        
+                        <h3>JavaScript Frameworks Evolution</h3>
+                        <p>The JavaScript ecosystem continues to evolve rapidly. While React, Vue, and Angular remain dominant, newer frameworks like Svelte and SolidJS are gaining popularity for their innovative approaches to performance optimization.</p>
+                        
+                        <p>Svelte, in particular, has been making waves with its compiler-based approach that shifts work from the browser to the build step. This results in smaller bundle sizes and faster runtime performance. The creator of Svelte, Rich Harris, recently joined Vercel, signaling strong industry support and continued development of the framework.</p>
+                        
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                             alt="JavaScript Code" class="img-fluid">
+                        
+                        <h3>WebAssembly (Wasm) Matures</h3>
+                        <p>WebAssembly is coming of age in 2023. This binary instruction format allows code written in languages like C, C++, and Rust to run in the browser at near-native speed. Wasm is particularly valuable for performance-intensive applications such as video editing, 3D rendering, and scientific simulations.</p>
+                        
+                        <p>Recent developments have improved Wasm's integration with JavaScript, making it easier to use in web applications. We're also seeing the emergence of frameworks like Blazor (from Microsoft) that leverage Wasm to run .NET applications in the browser.</p>
+                        
+                        <h3>AI-Powered Development Tools</h3>
+                        <p>Artificial intelligence is transforming the developer experience. AI-powered tools like GitHub Copilot are becoming increasingly sophisticated at assisting developers with code completion, bug detection, and even generating entire functions based on natural language descriptions.</p>
+                        
+                        <p>These tools are evolving from simple autocomplete features to true collaborative partners that can understand context and provide intelligent suggestions. As machine learning models continue to improve, we can expect AI to play an even larger role in the development workflow.</p>
+                        
+                        <div class="alert alert-primary mt-4">
+                            <h5>Key Takeaway</h5>
+                            <p>The future of web development in 2023 is characterized by improved performance, enhanced capabilities, and more intelligent tooling. Developers who embrace these trends will be well-positioned to create more powerful, efficient, and user-friendly web applications.</p>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-5">
+                            <div class="d-flex">
+                                <button class="btn btn-outline-primary me-2"><i class="bi bi-hand-thumbs-up me-1"></i> Like</button>
+                                <button class="btn btn-outline-primary"><i class="bi bi-chat me-1"></i> Comment</button>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-secondary"><i class="bi bi-bookmark me-1"></i> Save</button>
+                            </div>
+                        </div>
+                        
+                        <div class="card mt-5">
+                            <div class="card-body">
+                                <h4 class="card-title">About the Author</h4>
+                                <div class="d-flex">
+                                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                                         class="author-img me-3">
+                                    <div>
+                                        <h5>Alex Johnson</h5>
+                                        <p class="text-muted">Senior Web Developer with 10+ years of experience. Specializes in JavaScript frameworks and performance optimization. Regular contributor to open source projects and tech publications.</p>
+                                        <a href="#" class="btn btn-sm btn-primary">Follow</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Category Page -->
+    <div id="category" class="page-content">
+        <div class="category-page-header">
+            <div class="container">
+                <h1 class="display-4 fw-bold mb-3">Technology Articles</h1>
+                <p class="lead">Latest insights and trends in the world of technology</p>
+            </div>
+        </div>
+        
+        <div class="container my-5">
+            <div class="row">
+                <!-- Category Article 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="position-relative">
+                            <div class="card-img-container">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                                     class="card-img-top" alt="AI">
+                            </div>
+                            <span class="badge bg-danger category-badge">Technology</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">AI in Everyday Applications</h5>
+                            <p class="card-text">How artificial intelligence is becoming an integral part of our daily lives through innovative applications and services.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                                         class="author-img me-2">
+                                    <div>
+                                        <small class="text-muted">David Kim</small>
+                                    </div>
+                                </div>
+                                <a href="#article5" class="btn btn-sm btn-outline-primary" data-page="article">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category Article 2 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="position-relative">
+                            <div class="card-img-container">
+                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                                     class="card-img-top" alt="Web Development">
+                            </div>
+                            <span class="badge bg-danger category-badge">Technology</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">The Future of Web Development</h5>
+                            <p class="card-text">Exploring the latest trends and technologies that are shaping the future of web development.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                                         class="author-img me-2">
+                                    <div>
+                                        <small class="text-muted">Alex Johnson</small>
+                                    </div>
+                                </div>
+                                <a href="#article1" class="btn btn-sm btn-outline-primary" data-page="article">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category Article 3 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="position-relative">
+                            <div class="card-img-container">
+                                <img src="https://images.unsplash.com/photo-1581094794329-16d4f80f3d8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                                     class="card-img-top" alt="Robotics">
+                            </div>
+                            <span class="badge bg-danger category-badge">Technology</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">The Robotics Revolution</h5>
+                            <p class="card-text">How robotics is transforming industries from manufacturing to healthcare and what it means for the future workforce.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                                         class="author-img me-2">
+                                    <div>
+                                        <small class="text-muted">Sarah Miller</small>
+                                    </div>
+                                </div>
+                                <a href="#article9" class="btn btn-sm btn-outline-primary" data-page="article">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category Article 4 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="position-relative">
+                            <div class="card-img-container">
+                                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                                     class="card-img-top" alt="3D Printing">
+                            </div>
+                            <span class="badge bg-danger category-badge">Technology</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">3D Printing Breakthroughs</h5>
+                            <p class="card-text">Recent advancements in 3D printing technology and how they're revolutionizing manufacturing and medicine.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                                         class="author-img me-2">
+                                    <div>
+                                        <small class="text-muted">Michael Chen</small>
+                                    </div>
+                                </div>
+                                <a href="#article10" class="btn btn-sm btn-outline-primary" data-page="article">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <nav class="d-flex justify-content-center mt-5">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+<!-- About Page -->
+    <div id="about" class="page-content">
+        <div class="about-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center mb-5">
+                        <h1 class="display-4 fw-bold mb-3">About BlogSpace</h1>
+                        <p class="lead">We're a platform dedicated to sharing knowledge, ideas, and stories from around the world.</p>
+                    </div>
+                </div>
+                
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <h2 class="mb-4">Our Story</h2>
+                        <p>BlogSpace was founded in 2018 with a simple mission: to create a space where writers and readers could connect over meaningful content. What started as a small blog has grown into a vibrant community of thousands of contributors and millions of readers worldwide.</p>
+                        <p>Our platform was born out of frustration with the clickbait culture dominating online media. We wanted to create a space where thoughtful, well-researched content could thrive without the pressure of virality metrics.</p>
+                        <p>Today, BlogSpace hosts content across a wide range of topics, from technology and business to travel and wellness. We're proud to have built a community that values depth over brevity and substance over sensationalism.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Our Team" class="img-fluid rounded">
+                    </div>
+                </div>
+                
+                <div class="text-center mb-5">
+                    <h2 class="mb-4">Meet Our Team</h2>
+                    <p class="lead mb-5">The passionate individuals behind BlogSpace</p>
+                    
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="team-member">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                                     alt="Michael Chen">
+                                <h4>Michael Chen</h4>
+                                <p class="text-muted">Founder & CEO</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="team-member">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                                     alt="Sarah Miller">
+                                <h4>Sarah Miller</h4>
+                                <p class="text-muted">Editor-in-Chief</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="team-member">
+                                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                                     alt="Alex Johnson">
+                                <h4>Alex Johnson</h4>
+                                <p class="text-muted">Tech Lead</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card border-0 shadow">
+                            <div class="card-body p-5">
+                                <h2 class="text-center mb-4">Our Values</h2>
+                                <div class="row">
+                                    <div class="col-md-4 text-center mb-4">
+                                        <div class="bg-light p-4 rounded">
+                                            <i class="bi bi-journal-text display-4 text-primary mb-3"></i>
+                                            <h4>Quality Content</h4>
+                                            <p>We prioritize well-researched, thoughtful articles over clickbait.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 text-center mb-4">
+                                        <div class="bg-light p-4 rounded">
+                                            <i class="bi bi-people display-4 text-primary mb-3"></i>
+                                            <h4>Community First</h4>
+                                            <p>Our readers and writers are at the heart of everything we do.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 text-center mb-4">
+                                        <div class="bg-light p-4 rounded">
+                                            <i class="bi bi-lightbulb display-4 text-primary mb-3"></i>
+                                            <h4>Innovation</h4>
+                                            <p>We're constantly exploring new ways to improve the reading experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Contact Page -->
+    <div id="contact" class="page-content">
+        <div class="category-page-header">
+            <div class="container">
+                <h1 class="display-4 fw-bold mb-3">Contact Us</h1>
+                <p class="lead">We'd love to hear from you</p>
+            </div>
+        </div>
+        
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h2 class="mb-4">Get in Touch</h2>
+                    <p class="mb-4">Have questions about our platform? Interested in contributing? Or just want to say hello? Fill out the form and we'll get back to you as soon as possible.</p>
+                    
+                    <div class="mb-4">
+                        <h5><i class="bi bi-geo-alt me-2"></i> Our Location</h5>
+                        <p>123 Innovation Street, Tech City, TC 10001</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5><i class="bi bi-telephone me-2"></i> Call Us</h5>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5><i class="bi bi-envelope me-2"></i> Email Us</h5>
+                        <p>hello@blogspace.com</p>
+                    </div>
+                    
+                    <div>
+                        <h5><i class="bi bi-clock me-2"></i> Office Hours</h5>
+                        <p>Monday-Friday: 9am-6pm</p>
+                        <p>Saturday: 10am-4pm</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-4 p-lg-5">
+                            <h3 class="mb-4">Send a Message</h3>
+                            <form class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="First Name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Last Name" required>
+                                    </div>
+                                </div>
+                                <input type="email" class="form-control" placeholder="Email Address" required>
+                                <input type="text" class="form-control" placeholder="Subject">
+                                <textarea class="form-control" placeholder="Your Message" required></textarea>
+                                <button type="submit" class="btn btn-primary w-100 py-3 fw-bold">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="mb-3 d-flex align-items-center">
+                        <i class="bi bi-pencil-square me-2"></i>BlogSpace
+                    </h4>
+                    <p class="text-light opacity-75">A platform for sharing knowledge, ideas, and stories from around the world. Join our community of writers and readers.</p>
+                    <div class="d-flex mt-4">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3 text-white">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-decoration-none text-light opacity-75" data-page="home">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="text-decoration-none text-light opacity-75" data-page="about">About Us</a></li>
+                        <li class="mb-2"><a href="#technology" class="text-decoration-none text-light opacity-75" data-page="category">Categories</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-decoration-none text-light opacity-75" data-page="contact">Contact</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-light opacity-75">Write for Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3 text-white">Categories</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#technology" class="text-decoration-none text-light opacity-75" data-page="category">Technology</a></li>
+                        <li class="mb-2"><a href="#design" class="text-decoration-none text-light opacity-75" data-page="category">Design</a></li>
+                        <li class="mb-2"><a href="#business" class="text-decoration-none text-light opacity-75" data-page="category">Business</a></li>
+                        <li class="mb-2"><a href="#lifestyle" class="text-decoration-none text-light opacity-75" data-page="category">Lifestyle</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-light opacity-75">Travel</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="mb-3 text-white">Newsletter</h5>
+                    <p class="text-light opacity-75">Get the latest posts delivered right to your inbox.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control py-2" placeholder="Your email address">
+                        <button class="btn subscribe-btn" type="button">Subscribe</button>
+                    </div>
+                    <p class="text-light opacity-75 small mt-3">By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.</p>
+                </div>
+            </div>
+            <hr class="mt-4 border-secondary">
+            <div class="row pt-3">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-light opacity-75 mb-0">&copy; 2023 BlogSpace. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-light opacity-75 text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-light opacity-75 text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
